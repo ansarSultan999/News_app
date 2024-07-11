@@ -838,8 +838,6 @@ ul.section-6-list>li>div>span>em {
 }
 .sec-6-second-img {
     position: relative;
-    position: static;
-    top: 0;
 }
 .sec-6-second-text {
     position: absolute;
