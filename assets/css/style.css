@@ -823,7 +823,11 @@ ul.section-6-list>li>div {
     /* margin-bottom: 20px; */
     /* margin-left: 24px; */
 }
-
+.stiky {
+    height: 100%;
+    position: sticky;
+    top: 10px;
+}
 ul.section-6-list {
     display: flex;
     flex-wrap: wrap;
