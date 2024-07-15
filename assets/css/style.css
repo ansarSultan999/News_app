@@ -178,8 +178,16 @@ ul.inner-footer {
     position: relative;
 }
 .social-1 i {
-    padding-right: 30px;
+    padding-left: 30px;
     font-size: 25px;
+}
+button#show-12 {
+    border: none;
+    background: none;
+}
+
+.social-1 {
+    display: flex;
 }
 .social-1 > button {
     padding: 8px 25px;
@@ -198,12 +206,38 @@ ul.inner-footer {
 }
 nav.navbar.navbar-expand-lg {
     padding: 0;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 a.nav-link:hover {
     color: #3079b8;
 }
-
+.search-aria {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    left: 20rem;
+    display: none;
+}
+.input>textarea {
+    width: 38rem;
+    height: 70px;
+    padding: 20px;
+    outline: none;
+    border: 1px solid #00000030;
+    background-color: #fff;
+    color: #000;
+}
+.button-1>button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    background: red;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
 .navbar-brand {
     margin-right: clamp(2rem, 6vw, 8rem);
 }
@@ -225,6 +259,65 @@ a.nav-link {
 .social>i {
     color: #fff;
     padding-left: 20px;
+}
+.search-aria.showbar {
+    display: block;
+    display: flex;
+}
+.social-1 i:nth-child(3) {
+    position: relative;
+}
+
+.logIn.active{
+    display: block;
+}
+ul.logIn {
+    position: absolute;
+    /* bottom: -104px; */
+    right: 0;
+    z-index: 9;
+    padding: 15px 15px 15px 35px;
+    background: #3079b8;
+    border-radius: 10px;
+    display: none;
+    animation: none;
+    top: 51px;
+}
+.social-1 i:nth-child(3):hover ul.logIn{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    }
+ul.logIn>li>a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+}
+ul.logIn>li>a:hover{
+    color: yellow;
+}
+ul.logIn>li:first-child::after {
+    position: absolute;
+    content: "\f234";
+    font-family: 'Font Awesome 5 Pro';
+    left: 4px;
+    color: #fff;
+}
+ul.logIn>li:nth-child(2)::after {
+    position: absolute;
+    content: "\f2f6";
+    font-family: 'Font Awesome 5 Pro';
+    left: 4px;
+    color: #fff;
+}
+ul.logIn>li:nth-child(3)::after {
+    position: absolute;
+    content: "\e668";
+    font-family: 'Font Awesome 5 Pro';
+    left: 4px;
+    color: #fff;
 }
 /*        section-1 start */
 .sec-1-inner-img>img {
@@ -428,6 +521,7 @@ a.nav-link:not(last-child) {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .sec-1-flx-div>span {
     color: #fff;
@@ -481,7 +575,7 @@ a.nav-link:not(last-child) {
     font-size: 18px;
     font-weight: 500;
     margin: 0;
-    padding: 10px 0;
+    padding: 3px 0;
     -webkit-line-clamp: 2;
     overflow: hidden;
     text-wrap: balance;
@@ -789,6 +883,7 @@ ul.section-6-list>li>div>span>em {
     align-items: center;
     margin-bottom: 15px;
     border-bottom: 1px solid #0003;
+    justify-content: space-between;
 }
 .sec-6-cards {
     background-color: #b8b7b729;
@@ -925,7 +1020,7 @@ span.spn {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     margin: 0;
-    padding: 5px 0;
+    padding: 4px 0;
 }
 .section-6-main-aria {
     background-color: #f4f3f3;
@@ -1220,6 +1315,9 @@ button.nav-btn:hover {
     .social-1 button:last-child {
         display: none;
     }
+    .social-1 i:nth-child(2) {
+        display: none;
+    }
     .social-1 i {
         padding: 0;
     }
@@ -1227,7 +1325,7 @@ button.nav-btn:hover {
         justify-content: center;
     }
     .abc {
-        top: -12px;
+        top: -20px;
         right: 162px;
     }
     .stiky {     
@@ -1244,8 +1342,8 @@ button.nav-btn:hover {
         justify-content: center;
     }
 }   
-@media screen and ( max-width: 567px){
+@media screen and ( max-width: 576px){
     .side-1 {
-        display: inherit;
+        display: none;
     }
 }
