@@ -382,6 +382,11 @@ a.nav-link {
     font-size: 14px;
     font-weight: 600;
 }
+.aaa {
+    padding: 10px;
+    background: #3079b8;
+    border-radius: 10px;
+}
 .section-1-img {
     position: relative;
 }
@@ -1355,8 +1360,8 @@ button.nav-btn:hover {
         justify-content: center;
     }
     .abc {
-        bottom: -103px;
-        right: 151px;
+        top: -12px;
+        right: 162px;
     }
 }
 @media screen and ( max-width: 991px){
